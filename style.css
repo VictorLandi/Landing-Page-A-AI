@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* { /* o * seleciona toda tag do doc. html*/
+    margin: 0;
+    padding: 0; /* padding define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #2F2325 16.62%, rgba(149,131,207,1) 85.61%);
+}
+
+.cabeçalho {
+    display: flex; /*deixa avisado que iremos usar caixas flexiveis*/
+    flex-direction: row; /*direção em linha*/
+    align-items: center; /*alinha o itens pelo centro*/
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.cabeçalho-imagem {
+    height: 100px;
+}
+
+.cabeçalho-menu {
+    display: flex;
+    gap: 32px; /* distanciamento entre o menu cabeçalho*/
+}
+
+.cabeçalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400; /*intensidade da cor*/
+    font-size: 18px; /*tamanho da fonte*/
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7; /*barra do topo*/
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column; /*deixa em coluna*/
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400px;
+    font-size: 64px;
+    color: #FFF2E7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400; /*Densidade da font*/
+    font-size: 24px;
+    color: #ecd6c4;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #ecd6c4;
+    width: 180px;
+    height: 60px;
+    border: none; /*sem bordas*/
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25); /*sombra do botão*/
+    border-radius: 20px; /*Formato arredondado do botão*/
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #2F2325;
+}
+
+.conteudo-principal-escrito-botao:hover { /*houver é pra dar efeito no botão ao passar o mouse*/
+   background-color: rgba(236, 214, 196, 0.53); 
+}
+
+.conteudo-princial-imagem {
+    height: 5444px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /*deixa tudo no centro*/
+    gap: 24px;/*deixa um espaco de 24px entre as linhas*/
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7; /*o risquinho da divisão*/
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px; /*distancia delo pros textos debaixo*/
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300; /*Densidade da font*/
+    font-size: 18px;
+    color: #ecd6c4;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block; /*deixa divida em bloco*/
+    margin: 0 auto;    /*deixa o "bloco" da imagem no centro por conta do zero*/
+}
